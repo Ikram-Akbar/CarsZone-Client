@@ -28,10 +28,10 @@ const Register = () => {
     <div className="container">
       <form
         onSubmit={handleRegisterSubmit}
-        className="w-50 mx-auto bg-secondary p-3 my-4"
+        className="w-50 mx-auto bg-dark shadow p-5 my-4"
       >
         <div className="mb-3">
-          <h2>Register</h2>
+          <h2 className="text-white"> Please Register</h2>
           <input
             className="form-control"
             onBlur={handleOnBlur}
@@ -67,7 +67,7 @@ const Register = () => {
             placeholder="Retype Your Password"
           />
         </div>
-        <button type="submit" className="btn btn-primary w-100">
+        <button type="submit" className="btn btn-outline-light w-100">
           REGISTER
         </button>
         <NavLink style={{ textDecoration: "none", color: "white" }} to="/login">

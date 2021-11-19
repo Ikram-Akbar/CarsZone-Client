@@ -15,12 +15,14 @@ const Cars = () => {
 
   return (
     <div className="mt-5">
-      <h1 className="fw-bolder text-primary">
-        CARS COLLECTION
-      </h1>
+      <h2 className=" text-dark">
+        CARS
+      </h2>
+      <hr />
+      <h4 className="fw-bold"> COLLECTION OF CARS</h4>
       {!cars?.length ? (
-        <div className="spinner-border text-danger" role="status">
-          <span className="visually-hidden">Loading...</span>
+        <div className="spinner-border text-info" role="status">
+          <span className="visually-hidden">Please Wait...</span>
         </div>
       ) : (
         <div className="row pb-5">

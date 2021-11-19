@@ -7,7 +7,7 @@ const Car = ({car}) => {
 
     return (
       <div className="col-lg-4 col-md-6 col-sm-12">
-        <div className="card-group mt-3 ">
+        <div className="card-group mt-3 shadow">
         <Rotate top left>
           <div className="card p-4 "> 
               <img style={{ width: "100%"}} src={img} alt="" />
@@ -15,7 +15,7 @@ const Car = ({car}) => {
               <h3>{name}</h3>
               <p className="card-text">{description?.slice(0, 130)}..</p>
               <h5 className="card-title">${price}</h5>
-              <Link to={`/cars/${_id}`}><button className="btn btn-info">PURCHASE NOW</button></Link>
+              <Link to={`/cars/${_id}`}><button className="btn btn-outline-dark">ORDER NOW</button></Link>
             </div>
           </div>
            </Rotate> 

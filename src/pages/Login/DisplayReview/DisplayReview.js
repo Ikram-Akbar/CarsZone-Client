@@ -2,6 +2,7 @@ import React from "react";
 import Rating from "react-rating";
 import { useState, useEffect } from "react";
 import ReviewDetails from "../ReviewDetails/ReviewDetails";
+import { Bloodtype } from "@mui/icons-material";
 
 const DisplayReview = () => {
   const [reviews, setReview] = useState([]);
@@ -16,7 +17,9 @@ const DisplayReview = () => {
 
   return (
     <div className="mt-5">
-      <h1 className="fw-bolder text-primary">REVIEWS</h1>
+      <h2>What Our Client Say !</h2>
+      <hr />
+      <h4 className="fw-bold text-dark">REVIEWS</h4>
       {!reviews?.length ? (
         <div className="spinner-border text-danger" role="status">
           <span className="visually-hidden">Loading...</span>

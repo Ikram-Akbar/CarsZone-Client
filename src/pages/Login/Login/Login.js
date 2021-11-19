@@ -29,13 +29,13 @@ const Login = () => {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container  my-5">
       <form
         onSubmit={handleLoginSubmit}
-        className="w-50 mx-auto bg-secondary py-5 px-2"
+        className="w-50 mx-auto bg-dark shadow py-5 px-3"
       >
         <div className="mb-3">
-          <h2>Login</h2>
+          <h2 className="text-white">Please Login</h2>
           <input
             className="form-control"
             onChange={handleOnChange}
@@ -53,7 +53,7 @@ const Login = () => {
             placeholder="Your Password"
           />
         </div>
-        <button type="submit" className="btn btn-primary w-100">
+        <button type="submit" className="btn btn-outline-light w-100 ">
           LOGIN
         </button>
         <NavLink
@@ -64,17 +64,17 @@ const Login = () => {
         </NavLink>
         <br />
         {isLoading && (
-          <div className="spinner-border text-danger" role="status">
-            <span className="visually-hidden">Loading...</span>
+          <div className="spinner-border text-success" role="status">
+            <span className="visually-hidden">Wait a Moment ...</span>
           </div>
         )}
-        {user?.email && <Alert severity="success">Login Successfully</Alert>}
+        {user?.email && <Alert severity="success"> You Have Login Successfully</Alert>}
         {authError && (
           <div className="alert alert-danger" role="alert">
             {authError}
           </div>
         )}
-        <p>-----------------------------</p>
+        <p className="text-white fs-3 ">-----------------------------</p>
         <Button onClick={handleGoogleSignIn} variant="contained">
           Google Sign In
         </Button>

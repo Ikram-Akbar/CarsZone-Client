@@ -15,10 +15,10 @@ const ExploreItems = () => {
 
   return (
     <div className="mt-5">
-      <h1 className="fw-bolder text-primary">MORE CARS COLLECTION</h1>
+      <h1 className="fw-bolder text-dark">MORE CARS COLLECTION</h1>
       {!cars?.length ? (
-        <div className="spinner-border text-danger" role="status">
-          <span className="visually-hidden">Loading...</span>
+        <div className="spinner-border text-success" role="status">
+          <span className="visually-hidden">Wait please...</span>
         </div>
       ) : (
         <div className="row pb-5">

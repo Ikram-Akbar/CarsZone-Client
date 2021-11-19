@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../Hooks/useAuth";
-import Rating from "react-rating";
+
 
 const AddReview = () => {
-  const { register, handleSubmit, watch, errors, reset } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const { user } = useAuth();
   // console.log(user)
 
@@ -18,15 +18,18 @@ const AddReview = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result.insertedId) {
-          alert("Thanks! For Your Comments");
+          alert("Thank You Sir !");
           reset();
         }
       });
   };
   return (
     <div>
-      <h1 className="text-warning">Review</h1>
+      <h1 className="text-success text-bolder">Add A Review</h1>
       <form onSubmit={handleSubmit(onSubmit)} >
+        <label htmlFor="Name">Name</label>
+        <br />
+        <br />
         <input
           className="input-field"
           name="customerName"
@@ -34,6 +37,9 @@ const AddReview = () => {
           {...register("customerName", { required: true })}
         />
         <br />
+        <br />
+        <label htmlFor="email">Email Address</label>
+        <br /><br />
         <input
           className="input-field"
           name="email"
@@ -42,12 +48,20 @@ const AddReview = () => {
           {...register("email", { required: true })}
         />
         <br />
+        <br />
+        <label> Add a Comment</label>
+        <br />
+        <br />
         <input
           className="input-field"
           name="comments"
           placeholder="Type Your Comment"
           {...register("comments", { required: true })}
         />
+        <br />
+        <br />
+        <label> Add a Ratting</label>
+        <br />
         <br />
         <input
           className="input-field"
@@ -56,9 +70,10 @@ const AddReview = () => {
           {...register("stars", { min: 0, max: 5, required: true })}
         />
         <br />
+        <br />
 
         <input
-          className="submit-btn btn btn-danger mt-3 px-5"
+          className="submit-btn btn btn-outline-dark mt-3 px-5"
           type="submit"
           value="Send"
         />
