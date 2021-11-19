@@ -90,7 +90,7 @@ const CarDetails = () => {
             <input
               type="submit"
               value="Order Now"
-              className="btn btn-success ms-2 w-75"
+              className="btn btn-outline-dark ms-2 w-75"
             />
           </form>
         </div>
