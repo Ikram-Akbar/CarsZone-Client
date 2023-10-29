@@ -1,23 +1,51 @@
-# live site link: https://cars-zone-b1414.web.app/
+Welcome file
+Welcome file
 
---------------------------------------------------------
+## MERN - Full Stack Project  
+### Project Name: Car Zone
+#### Description  : 
+ **CAR ZONE project based on MERN stack.** 
+*MERN stands for MongoDB, Express.js, React.js, and Node.js. It is a full-stack JavaScript solution that helps you build fast, robust, and maintainable web applications using MongoDB as the database, Express.js as the web framework, React.js as the front-end framework, and Node.js as the back-end runtime environment*
 
-# Uses Technology : 
- 1. React 
- 2. React-Router-dom
- 3. React-Bootstrap 
- 4. Material UI
- 5. React hook form
- 6. React Reveal
+*React for the frontend with React Bootstrap and in the backend using Node.js and Express.js.  MongoDB as a database. You can perform **CRUD** operations (Create, Read, Update and Delete) on data using this stack*
+
+#### Technology : 
+| Frontend  | Backend |
+|--|--|
+| React Js |Node Js  |
+|React Router Dom |Express Js  |
+|React Hook Form|MongoDB  |
+|React Bootstrap |Nodemon + Cors  |
+|[Client Side Repository](https://github.com/Ikram-Akbar/CarsZone-Client) |[Server Side Repository](https://github.com/Ikram-Akbar/carZone-server/tree/main) |
+
+
+**Live Link :**  [Car Zone](https://cars-zone-b1414.web.app/%5D%28https://cars-zone-b1414.web.app/)
+
+
+
+
  
- -------------------------------------------------------
 
 
- # app Details
 
- 1. user friendly
- 2. admin panel
- 3. admin can make or change anythings
- 4. amin also make or create another role for website
- 5. customer or user can buy product 
- 
+
+
+
+MERN - Full Stack Project
+Project Name : Car Zone
+Description :
+CAR ZONE project based on MERN stack.
+MERN stands for MongoDB, Express.js, React.js, and Node.js. It is a full-stack JavaScript solution that helps you build fast, robust, and maintainable web applications using MongoDB as the database, Express.js as the web framework, React.js as the front-end framework, and Node.js as the back-end runtime environment
+
+React for the frontend with React Bootstrap and in the backend using Node.js and Express.js. MongoDB as a database. You can perform CRUD operations (Create, Read, Update, and Delete) on data using this stack
+
+Technology :
+Frontend	Backend
+React Js	Node Js
+React Router Dom	Express Js
+React Hook Form	MongoDB
+React Bootstrap	Nodemon + Cors
+Client Side Repository	Server Side Repository
+Live Link : Car Zone
+
+Markdown 1102 bytes 145 words 29 lines Ln 17, Col 98HTML 691 characters 132 words 20 paragraphs
